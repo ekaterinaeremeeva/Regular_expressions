@@ -36,7 +36,7 @@ function task3()
     let flag=re.test(str);
     return flag;
     }
-    let str=prompt("Введите строку состоящую только из букв и цифр");
+    let str=prompt("Введите строку, состоящую только из букв и цифр");
     if (isStr(str))
         alert("Строка введена правильно");
     else
