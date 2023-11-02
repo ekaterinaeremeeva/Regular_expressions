@@ -43,3 +43,17 @@ function task3()
         alert("Строка введена неправильно");
 }
 
+function task4()
+{
+    function isStr(str)
+    {
+    let re = /^[a-zA-Zа-яА-Я]{10,}$/;
+    let flag=re.test(str);
+    return flag;
+    }
+    let str=prompt("Введите строку, которая  не содержит спецсимволов и цифр и ее длина не менее 10 символов");
+    if (isStr(str))
+        alert("Строка введена правильно");
+    else
+        alert("Строка введена неправильно");
+}
