@@ -57,3 +57,20 @@ function task4()
     else
         alert("Строка введена неправильно");
 }
+
+function task5()
+{
+    let str=prompt("Введите строку, мы посчитаем сколько в ней цифр и букв");
+    function fn1()
+    {
+        let digits = str.match(/\d/g).length
+        return (digits);
+    }
+    function fn2()
+    {
+        let name = str.match(/[a-z]/gi).length
+        return(name);
+    }
+    alert (`Количество цифр ${fn1()}`);
+    alert (`Количество букв ${fn2()}`);
+}
