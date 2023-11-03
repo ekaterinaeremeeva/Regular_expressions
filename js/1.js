@@ -76,7 +76,7 @@ function task5()
         let namekiril = str.match(/[а-я]/gi).length
         return(namekiril);
     }
-    alert (`Количество цифр ${getDigits()}`);
-    alert (`Количество латинских букв ${getNameLat()}`);
-    alert (`Количество кириллических букв ${getNameKiril()}`);
+    alert(`Количество цифр ${getDigits()}`);
+    alert(`Количество латинских букв ${getNameLat()}`);
+    alert(`Количество кириллических букв ${getNameKiril()}`);
 }
