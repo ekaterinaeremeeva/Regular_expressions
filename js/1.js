@@ -61,16 +61,22 @@ function task4()
 function task5()
 {
     let str=prompt("Введите строку, мы посчитаем сколько в ней цифр и букв");
-    function fn1()
+    function getDigits()
     {
         let digits = str.match(/\d/g).length
         return (digits);
     }
-    function fn2()
+    function getNameLat()
     {
-        let name = str.match(/[a-z]/gi).length
-        return(name);
+        let namelat = str.match(/[a-z]/gi).length
+        return(namelat);
     }
-    alert (`Количество цифр ${fn1()}`);
-    alert (`Количество букв ${fn2()}`);
+    function getNameKiril()
+    {
+        let namekiril = str.match(/[а-я]/gi).length
+        return(namekiril);
+    }
+    alert(`Количество цифр ${getDigits()}`);
+    alert(`Количество латинских букв ${getNameLat()}`);
+    alert(`Количество кириллических букв ${getNameKiril()}`);
 }
